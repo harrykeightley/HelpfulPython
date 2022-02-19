@@ -8,9 +8,9 @@ export default function MainLayout({ children }) {
       <Head>
         <title>Python Course</title>
       </Head>
-      <div className="flex flex-col max-w-5xl mx-auto min-h-screen">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 max-w-5xl mx-auto">{children}</main>
       </div>
     </div>
   );

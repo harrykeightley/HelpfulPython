@@ -4,7 +4,7 @@ import { getAllPosts } from "../../lib/getMarkdownFiles";
 
 export default function Course({allPosts}) {
   return (
-    <div>
+    <div className="flex">
       <SideNav posts={allPosts}/>
       <p>Content</p>
     </div>

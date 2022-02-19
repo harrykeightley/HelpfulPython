@@ -3,17 +3,12 @@ import PostHeader from "../../components/PostHeader";
 import SideNav from "../../components/SideNav";
 import { getAllPosts, getPostBySlug } from "../../lib/getMarkdownFiles";
 import markdownToHtml from "../../lib/markdownToHtml";
+import CoursePageLayout from "../../components/CoursePageLayout";
 
 export default function CoursePage({ post, allPosts }) {
   const { title, author, date, content } = post;
   return (
-    <div>
-      <SideNav posts={allPosts} />
-      <article
-        className="prose lg:prose-xl "
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-    </div>
+    <CoursePageLayout post={post} allPosts={allPosts} />
   );
 }
 
@@ -21,6 +16,7 @@ export async function getStaticProps({ params }) {
   const allPosts = getAllPosts([
     "title",
     "order",
+    "slug"
   ]);
   const post = getPostBySlug(params.slug, [
     "title",
