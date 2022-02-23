@@ -5,7 +5,7 @@ import markdownToHtml from "../lib/markdownToHtml";
 
 const authors = [
   { name: "Ashleigh Richardson", image: "https://picsum.photos/200/200" },
-  { name: "Harry Keightley", image: "https://picsum.photos/200/200" },
+  { name: "Harry Keightley", image: "/harry.jpg" },
 ];
 
 export default function about({ content }) {
@@ -14,7 +14,11 @@ export default function about({ content }) {
       <div className="flex justify-evenly items-center">
         {authors.map(({ name, image }) => (
           <div key={name} className="flex flex-col items-center space-y-2">
-            <img className="rounded-full" src={image} alt="author image" />
+            <img
+              className="rounded-full h-52 w-52"
+              src={image}
+              alt="author image"
+            />
             <p className="font-semibold text-gray-600">{name}</p>
           </div>
         ))}
