@@ -10,9 +10,8 @@ export default function MainLayout({ children }) {
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 max-w-5xl mx-auto">{children}</main>
+        <main className="container flex-1 py-8 ">{children}</main>
       </div>
     </div>
   );
 }
- 

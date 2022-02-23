@@ -1,20 +1,29 @@
 import React from "react";
-import SideNav from "../../components/SideNav";
-import { getAllPosts } from "../../lib/getMarkdownFiles";
+import CoursePageLayout from "../../components/CoursePageLayout";
+import { getAllPosts } from "../../lib/getCourseMarkdown";
+import { getPageBySlug } from "../../lib/getPageMarkdown";
+import markdownToHtml from "../../lib/markdownToHtml";
 
-export default function Course({allPosts}) {
+export default function Course(props) {
   return (
     <div className="flex">
-      <SideNav posts={allPosts}/>
-      <p>Content</p>
+      <CoursePageLayout {...props} />
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(["title", "date", "slug", "author"]);
+  const allPosts = getAllPosts(["title", "date", "slug", "author", "order"]);
+  const introduction = getPageBySlug("introduction", [
+    "title",
+    "date",
+    "author",
+    "content",
+  ]);
+
+  const content = await markdownToHtml(introduction.content || "");
 
   return {
-    props: { allPosts },
+    props: { allPosts, post: { ...introduction, content } },
   };
 }
