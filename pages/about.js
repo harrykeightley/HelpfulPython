@@ -4,7 +4,7 @@ import { getPageBySlug } from "../lib/getPageMarkdown";
 import markdownToHtml from "../lib/markdownToHtml";
 
 const authors = [
-  { name: "Ashleigh Richardson", image: "https://picsum.photos/200/200" },
+  { name: "Ashleigh Richardson", image: "/ash.png" },
   { name: "Harry Keightley", image: "/harry.jpg" },
 ];
 
