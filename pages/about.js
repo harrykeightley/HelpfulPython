@@ -14,9 +14,9 @@ export default function about({ content }) {
       <div className="flex justify-evenly items-center">
         {authors.map(({ name, image }) => (
           <div key={name} className="flex flex-col items-center space-y-2">
-            <img
-              className="rounded-full h-52 w-52"
-              src={image}
+            <div
+              className="rounded-full h-52 w-52 bg-right-top bg-cover"
+              style={{ backgroundImage: `url(${image})` }}
               alt="author image"
             />
             <p className="font-semibold text-gray-600">{name}</p>
