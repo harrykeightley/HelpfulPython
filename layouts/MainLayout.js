@@ -6,7 +6,7 @@ export default function MainLayout({ children }) {
   return (
     <div className="bg-slate-100">
       <Head>
-        <title>Python Course</title>
+        <title>HelpfulPython</title>
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
