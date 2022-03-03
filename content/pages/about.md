@@ -16,4 +16,4 @@ Ashleigh has over six years of experience teaching topics ranging from introduct
 
 Harry Keightley has a bachelor's in computer science, which Ashleigh would claim isn't as cool as software engineering, but he gets to call himself a scientist, which must be worth _something_. He has spent 4 wonderful years, teaching university students how to program for the first time, and hopes that this project will allow him to pass the insights he's learnt over to the next generation of programmers.
 
-Harry currently works as a Senior Research Assistant at the University of Queensland, where he is building machine-learning tools to help linguists preserve dying languages. He also works as a freelance web developer for his own company, and is building a social media startup.
+Harry currently works as a Senior Research Assistant at the University of Queensland, where he is building machine-learning tools to help linguists preserve endangered languages. He also works as a freelance web developer for his own company, and is building a social media startup.
