@@ -4,8 +4,8 @@ import { getPageBySlug } from "../lib/getPageMarkdown";
 import markdownToHtml from "../lib/markdownToHtml";
 
 const authors = [
-  { name: "Ashleigh Richardson", image: "/ash.png" },
-  { name: "Harry Keightley", image: "/harry.jpg" },
+  { name: "Ashleigh Richardson", image: "/authors/ash.png" },
+  { name: "Harry Keightley", image: "/authors/harry.jpg" },
 ];
 
 export default function about({ content }) {
