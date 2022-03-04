@@ -2,10 +2,7 @@
 
 ## Getting Started Locally
 - Install dependencies: `yarn`
-- Then run the development server:
-```bash
-yarn dev
-```
+- Then run the development server with `yarn dev`
 - Visit the browser at the port specified in the terminal, and you should see the site. 
 
 ## Stack info
